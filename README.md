@@ -17,7 +17,7 @@ The tool uses a woman’s own personal information to estimate risk of developin
 
 The application consists of two panels, one for user-input on clinical & demographic information whereas the other is a results panel.
 
-<img src="C:\Users\Javier\Desktop\R\Shiny\RA_Calculator\RA_Cal\1.png" alt="Questionaire" width="950" align ="center"/>
+<img src="https://github.com/remembrance1/RA_Calculator/blob/master/RA_Cal/1.PNG" alt="Screenshot" width="950" align ="center"/>
 
 Application: https://javierngkh.shinyapps.io/RA_Cal/
 
