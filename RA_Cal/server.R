@@ -215,11 +215,7 @@ shinyServer(
     observeEvent(input$image_click, {
       showModal(modalDialog(
         title = "Help with the Questionaire",
-        HTML("https://bcrisktool.cancer.gov/about.html
-             <h3>About Breast Cancer Risk Assessment Tool</h3>
-             The Breast Cancer Risk Assessment Tool (BCRAT) is based on a statistical model known as 
-             the Gail Model, named after Dr. Mitchell Gail, Senior Investigator in the Biostatistics 
-             Branch of the NCI Division of Cancer Epidemiology and Genetics 
+        HTML("
              <span style=color:#ff8c00;>Question 1:</span> Current age?<br>
              Explanation: The risk of developing breast cancer increases with age.<br><br>
              <span style=color:#ff8c00;>Question 2:</span> Age of first menstruation?<br>

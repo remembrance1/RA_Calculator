@@ -2,8 +2,8 @@ library(shiny)
 library(flexdashboard)
 library(shinythemes)
 
-shinyUI(fluidPage(theme = shinytheme("flatly"),
-                  headerPanel("Breast Cancer Risk Assessment"),
+shinyUI(navbarPage("Breast Cancer Risk Assessment", theme = shinytheme("flatly"), fluid = TRUE,
+              tabPanel("Calculator",
                   fluidRow(
                     sidebarPanel(
                       fluidRow(column(10, h2('Questionaire')),
@@ -98,6 +98,15 @@ shinyUI(fluidPage(theme = shinytheme("flatly"),
                     
                   )
                   
-)
-
-)
+              ),
+              tabPanel("About",
+                       fluidRow(
+                         column(2,
+                                p("")),
+                         column(8,
+                                includeMarkdown("./about/about.Rmd")),
+                         column(2,
+                                p(""))
+                       )
+            )
+))
